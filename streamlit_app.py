@@ -17,5 +17,5 @@ X = df.drop('species', axis=1)
 st.dataframe(X)
 
 st.write('**y**')
-y = df[species]
+y = df['species']
 st.dataframe(y)
