@@ -12,6 +12,7 @@ df
 
 st.write('**X**')
 X = df.drop('species', axis=1)
+X
 
 st.write('**y**')
 X = df.species
