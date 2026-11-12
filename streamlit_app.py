@@ -7,13 +7,15 @@ st.info('This is app')
 
 with st.expander('Data'):
 st.write('**Raw data**')
-df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_size.csv')
+df = pd.read_csv(
+  'https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_size.csv'
+)
 st.dataframe(df)
 
 st.write('**X**')
 X = df.drop('species', axis=1)
-X
+st.dataframe(X)
 
 st.write('**y**')
 y = df.species
-y
+st.dataframe(y)
