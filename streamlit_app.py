@@ -10,7 +10,7 @@ with st.expander('Data'):
     df = pd.read_csv(
   'https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_size.csv'
 )
-st.dataframe(df)
+df
 
 st.write('**X**')
 X = df.drop('species', axis=1)
