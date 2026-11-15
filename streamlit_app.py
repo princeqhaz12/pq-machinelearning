@@ -37,6 +37,5 @@ with st.expander("Data"):
 st.success("Application loaded successfully!")
 
 with st.expander("Data visualization"):
-    df2 = df.dropna(subset=["body_mass_g", "bill_length_mm", "species"])
-    st.scatter_chart(data=df2, x='bill_length_mm', y='body_mass_g', color='species')
+    st.scatter_chart(data=df, x="bill_length_mm", y="body_mass_g", color="species")
 
