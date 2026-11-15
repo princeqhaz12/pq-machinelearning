@@ -15,8 +15,8 @@ st.write('**Raw data**')
 st.write('**X**')
 X = df.drop('species', axis=1)
 st.write('**y**')
-
 y = df['species']
+
 st.dataframe(df)    
 st.dataframe(X)
 st.dataframe(y)
