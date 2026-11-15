@@ -33,3 +33,6 @@ with st.expander("Data"):
     st.dataframe(df.isnull().sum().to_frame("Missing Count"))
 # Content outside the expander
 st.success("Application loaded successfully!")
+
+with st.expander('Data visualization'):
+    st.scatter_chart(data=df, x='bill_length_mm', y ='body_mass_g', color='species')
