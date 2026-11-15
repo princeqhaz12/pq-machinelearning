@@ -40,3 +40,8 @@ with st.expander("Data visualization"):
     st.scatter_chart(data=df, x="culmen_length_mm", y="body_mass_g", color="species")
 with st.sidebar:
     st.header('Input features')
+    island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
+    gender = st.selectbox('Gender', ('male', 'female'))
+    culmen_length_mm = st.slider('Culmen Length (mm)', 32.1, 59.6, 43.9)
+    
+    
