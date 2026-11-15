@@ -12,12 +12,12 @@ with st.expander('Data'):
 )
     st.write('**Raw data**')    
     st.dataframe(df)    
-
-
+    st.dataframe(X)
+    st.dataframe(y)
+    
 st.write('**X**')
 X = df.drop('species', axis=1)
-st.dataframe(X)
 
 st.write('**y**')
 y = df['species']
-st.dataframe(y)
+
