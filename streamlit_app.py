@@ -56,5 +56,9 @@ with st.sidebar:
     input_df = pd.DataFrame(data, index=[0])
     input_peguins = pd.concat([input_df, X], axis=0)
 
+with st.expander('Input features'):
+    st.write('**Input peguin**')
+    input_df
+    st.write('**Combined peguins data**')
 input_peguins
     
