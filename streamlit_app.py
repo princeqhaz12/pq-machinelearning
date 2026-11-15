@@ -6,11 +6,12 @@ st.title('🎈 Machine Learning App')
 st.info('This is app')
 
 with st.expander('Data'):
-    st.write('**Raw data**')
+
     df = pd.read_csv(
   'https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_size.csv'
 )
-st.dataframe(df)    
+    st.write('**Raw data**')    
+    st.dataframe(df)    
 
 
 st.write('**X**')
