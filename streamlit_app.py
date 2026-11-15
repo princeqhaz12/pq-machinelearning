@@ -60,5 +60,5 @@ with st.expander('Input features'):
     st.write('**Input peguin**')
     input_df
     st.write('**Combined peguins data**')
-input_peguins
+    input_peguins
     
