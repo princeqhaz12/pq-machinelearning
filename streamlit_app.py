@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # Page title
 st.title("🐧 Machine Learning App")
@@ -40,3 +41,4 @@ with st.expander("Data visualization"):
                      x='bill_length_mm', 
                      y='body_mass_g', 
                      color='species')
+    st.plotly_chart(fig, use_container_width=True)
