@@ -38,4 +38,5 @@ st.success("Application loaded successfully!")
 
 with st.expander("Data visualization"):
     st.scatter_chart(data=df, x="culmen_length_mm", y="body_mass_g", color="species")
-
+with.sidebar:
+    st.header('Input features')
