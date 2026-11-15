@@ -50,5 +50,10 @@ with st.sidebar:
     data = {'island', island, 
             'culmen_length_mm', culmen_length_mm,
             'culmen_depth_mm', culmen_depth_mm,
-            'flipper_length_mm', flipper_length}
+            'flipper_length_mm', flipper_length_mm,
+           'body_mass_g', body_mass_g,
+            'gender', gender}
+    input_df = pd.DataFrame(data, index=[0])
+
+input_df
     
